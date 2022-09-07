@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("/images/photos/footer.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 360px;
+
+  background: url("/images/photos/footer.jpg") center / cover;
+
+  height: $height-footer-dskt;
 
   @include onMobile {
-    height: 208px;
+    height: $height-footer-mb;
   }
 
   &__logo {

@@ -1,4 +1,4 @@
-.contacts-form {
+.form-field {
   display: flex;
   flex-direction: column;
   width: 412px;
@@ -19,24 +19,23 @@
     width: 100%;
 
     background-color: #f7f8ff;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #000;
+    color: $color-black;
     border-radius: 8px;
 
     border: 2px solid transparent;
 
     &::placeholder {
-      color: #8f99a8;
+      color: $color-placeholder;
     }
 
     &:hover {
-      border-color: #ccd0e0;
+      border-color: $color-lite-grey;
     }
 
     &:focus {
-      border-color: #0075ff;
+      border-color: $color-blue;
     }
   }
 }

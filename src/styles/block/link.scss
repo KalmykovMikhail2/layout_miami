@@ -9,26 +9,11 @@
   color: $color-blue;
   font-weight: 700;
 
-  &::after {
-    box-sizing: border-box;
-    content: "";
-    display: block;
-    height: 2px;
-    border-radius: 8px;
-
-    background-color: $color-blue;
-    transform: scale(0);
-    
-    transition: scale, 0.3s;
-  }
-
-  &:hover::after {
-    transform: scale(1);
-  }
+  @include link-after-hover ($color-blue);
 }
 
 .link--grey {
-  color: #3e3e3e;
+  color: $color-grey;
 
   transition: color 0.3s;
 
@@ -36,46 +21,20 @@
     color: $color-blue;
   }
 
-  &::after {
-    content: "";
-    display: block;
-    height: 2px;
-    border-radius: 8px;
-
-    background-color: $color-blue;
-    transform: scale(0);
-    
-    transition: scale, 0.3s;
-  }
-
-  &:hover::after {
-    transform: scale(1);
-  }
+  @include link-after-hover ($color-blue);
 }
 
 .link--white {
   font-weight: 700;
   color: $color-wite;
-  box-sizing: border-box;
-
-  border-bottom: 1px solid transparent;
 
   transition: border-bottom 0.3s;
 
+  @include link-after-hover ($color-wite);
+
   &::after {
-    content: "";
-    display: block;
-    height: 2px;
-    border-radius: 8px;
-    margin-top: 8px;
-
-    background-color: $color-wite;
-    transform: scale(0);
-
-    transition: scale, 0.3s;
-  }
-
-  &:hover::after {
-    transform: scale(1);
+    margin-top: 80px;
+    // bottom: -8px;
+    // pointer-events: none;
   }
 }

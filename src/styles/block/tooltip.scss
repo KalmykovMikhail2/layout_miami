@@ -6,14 +6,10 @@
 
   width: max-content;
 
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  @extend %number-phone-style;
   color: $color-wite;
+
   opacity: 0;
   transition: opacity 0.3s;
-  // cursor: default;
   pointer-events: none;
 }

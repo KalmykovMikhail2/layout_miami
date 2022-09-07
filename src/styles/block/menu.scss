@@ -16,9 +16,8 @@
   
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
+    @include flex (column);
+    gap: 48px;
   }
 
   &__link {

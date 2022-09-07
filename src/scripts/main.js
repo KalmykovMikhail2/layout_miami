@@ -8,9 +8,9 @@ window.addEventListener('hashchange', () => {
   }
 });
 
-const form = document.querySelector('.contacts-form');
+const form = document.querySelector('.form-field');
 const inputs = document.querySelectorAll('.button--input');
-const textarea = document.querySelector('.contacts-form__textarea');
+const textarea = document.querySelector('.form-field__textarea');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();

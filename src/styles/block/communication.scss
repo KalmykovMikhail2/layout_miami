@@ -3,18 +3,14 @@
   flex-direction: column;
   gap: 16px;
   
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  @extend %number-phone-style;
 
   &__call-to-order {
     
     &::after {
       content: "";
       display: block;
-      margin-top: 8px;
+      margin-top: 4px;
       height: 2px;
       border-radius: 8px;
   
